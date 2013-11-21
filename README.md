@@ -1,6 +1,6 @@
-# XsCapistranoRecipes
+# xs_capistrano_recipes
 
-TODO: Write a gem description
+This gem includes some capistrano tasks for me
 
 ## Installation
 
@@ -18,7 +18,20 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+in deploy.rb:
+
+```ruby
+  # all recipes
+  require 'xs_capistrano_recipes'
+
+  # all monit recipes
+  require 'xs_capistrano_recipes/tasks/monit'
+
+  # all delayed_job recipe
+  require 'xs_capistrano_recipes/tasks/monit/delayed_job'
+```
+
+See added tasks via "cap -T"
 
 ## Contributing
 

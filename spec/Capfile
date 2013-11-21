@@ -1,0 +1,5 @@
+$LOAD_PATH << File.join( File.dirname( __FILE__ ), '..', 'lib' )
+
+set :application, "xs_capistrano_recipes"
+
+require 'xs_capistrano_recipes'
